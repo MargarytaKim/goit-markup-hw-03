@@ -19,78 +19,105 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <nav class="header-nav">
-            <a href="./index.html" class="logo">
-                <span class="logo-span-accent">Web</span>Studio
-            </a>
-            <ul class="header-list list">
-                <li class="header-item">
-                    <a href="./index.html" class="header-link link">Студия</a>
+        <div class="main-nav">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo">
+                    <span class="logo-span-accent">Web</span>Studio
+                </a>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a href="./index.html" class="header-link link">Студия</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="link-current link">Портфолио</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header-right">
+                <li class="header-right-item">
+                    <a class="header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="header-item">
-                    <a href="" class="link-current link">Портфолио</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-link link" href="">Контакты</a>
+                <li class="header-right-item">
+                    <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="header-right">
-            <li class="header-right-item">
-                <a class="header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="header-right-item">
-                <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
     </header>
-    <section>
+    <section class="portfolio section">
         <!--Страница Портфолио-->
-        <ul class="gallery">
-            <li><button class="gallery-button" type="button">Все</button></li>
-            <li><button class="gallery-button" type="button">Веб-сайты</button></li>
-            <li><button class="gallery-button" type="button">Приложения</button></li>
-            <li><button class="gallery-button" type="button">Дизайн</button></li>
-            <li><button class="gallery-button" type="button">Маркетинг</button></li>
-        </ul>
-        <ul>
-            <li><a href=""> <img src="./images/profile-img-1.jpg" width="370" alt="Экран ноутбука"></a>
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-2.jpg" width="370" alt="Постер"></a>
-                <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                <p>Дизайн</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-3.jpg" width="370" alt="Реклама ресторана"></a>
-                <h3>Ресторан <span lang="en">Seafood</span></h3>
-                <p>Приложение</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-4.jpg" width="370" alt="Наушники"></a>
-                <h3>Проект <span lang="en">Prime</span></h3>
-                <p>Маркетинг</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-5.jpg" width="370" alt="Коробки"></a>
-                <h3>Проект <span lang="en">Boxes</span></h3>
-                <p>Приложение</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-6.jpg" width="370" alt="Экран монитора"></a>
-                <h3 lang="en">Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-7.jpg" width="370" alt="Страницы журнала"></a>
-                <h3>Издание <span lang="en">Limited Edition</span></h3>
-                <p>Дизайн</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-8.jpg" width="370" alt="Этикетка"></a>
-                <h3 lang="en">Проект LAB</h3>
-                <p>Маркетинг</p>
-            </li>
-            <li><a href=""> <img src="./images/profile-img-9.jpg" width="370" alt="Руки на клавиатуре"></a>
-                <h3 lang="en">Growing Business</h3>
-                <p>Приложениег</p>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="gallery-menu">
+                <li><button class="gallery-button" type="button">Все</button></li>
+                <li><button class="gallery-button" type="button">Веб-сайты</button></li>
+                <li><button class="gallery-button" type="button">Приложения</button></li>
+                <li><button class="gallery-button" type="button">Дизайн</button></li>
+                <li><button class="gallery-button" type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="card-set">
+                <li class="gallery-item">
+                  <article class="card">
+                      <div class="card-thumb">
+                        <img src="./images/profile-img-1.jpg" width="370" alt="Экран ноутбука"></a>
+                      </div>
+                      <div class="card-content">
+                        <h3 class="card-name">Технокряк</h3>
+                        <p class="card-text">Веб-сайт</p>
+                      </div>
+                  </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-2.jpg" width="370" alt="Постер"></a>
+                   <article class="card">
+                    <h3 class="card-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="card-text">Дизайн</p>
+                    </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-3.jpg" width="370" alt="Реклама ресторана"></a>
+                   <article class="card">
+                    <h3 class="card-name">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="card-text">Приложение</p>
+                   </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-4.jpg" width="370" alt="Наушники"></a>
+                   <article class="card">
+                    <h3 class="card-name">Проект <span lang="en">Prime</span></h3>
+                    <p class="card-text">Маркетинг</p>
+                   </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-5.jpg" width="370" alt="Коробки"></a>
+                   <article class="card">
+                    <h3 class="card-name">Проект <span lang="en">Boxes</span></h3>
+                    <p class="card-text">Приложение</p>
+                   </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-6.jpg" width="370" alt="Экран монитора"></a>
+                  <article class="card">
+                    <h3 class="card-name" lang="en">Inspiration has no Borders</h3>
+                    <p class="card-text">Веб-сайт</p>
+                   </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-7.jpg" width="370" alt="Страницы журнала"></a>
+                   <article class="card">
+                    <h3 class="card-name" Издание <span lang="en">Limited Edition</span></h3>
+                    <p class="card-text">Дизайн</p>
+                   </article>
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-8.jpg" width="370" alt="Этикетка"></a>
+                   <article class="card"></article>
+                    <h3 class="card-name" lang="en">Проект LAB</h3>
+                    <p class="card-text">Маркетинг</p>
+                    
+                </li>
+                <li class="gallery-item"><a href=""> <img src="./images/profile-img-9.jpg" width="370" alt="Руки на клавиатуре"></a>
+                   <article class="card">
+                    <h3 class="card-name" lang="en">Growing Business</h3>
+                    <p class="card-text">Приложение</p>
+                   </article>
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- Подвал страницы -->
     <footer class="footer">
